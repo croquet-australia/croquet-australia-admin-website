@@ -1,3 +1,15 @@
 #app-content {
     margin-top: 3.6em;    
 }
+
+#loading {
+    background: black;
+    height: 100%;
+}
+
+#loading #message {
+    font-size: 1em;
+    color: gray;
+    padding-top: .2em;
+    padding-bottom: .2em;    
+}
