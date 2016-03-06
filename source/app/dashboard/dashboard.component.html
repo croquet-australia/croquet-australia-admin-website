@@ -1,8 +1,7 @@
 <h1>Dashboard</h1>
-<div class="grid grid-pad">
-	<div *ngFor="#tournament of tournaments" class="col-1-4" (click)="gotoDetail(tournament)">
-		<div class="module tournament">
-			<h4>{{tournament.name}}</h4>
-		</div>
-	</div>
+<div class="row">
+    <div class="col-md-3"><button class="btn btn-block">todo: Pages</button></div>
+    <div class="col-md-3"><button class="btn btn-block">todo: Blog</button></div>
+    <div class="col-md-3"><button class="btn btn-block" (click)="router.navigate(['Tournaments'])">Tournaments</button></div>
+    <div class="col-md-3"><!-- future use --></div>
 </div>
