@@ -1,6 +1,6 @@
 import { Component, OnInit } from 'angular2/core';
 import { Router } from 'angular2/router';
-import { Hero, HeroService } from '../heroes/hero.service';
+import { Tournament, TournamentsService } from '../tournaments/tournaments.service';
 
 @Component({
     selector: 'my-dashboard',
@@ -8,15 +8,15 @@ import { Hero, HeroService } from '../heroes/hero.service';
     styleUrls: ['app/dashboard/dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
-    public heroes: Hero[] = [];
+    public tournaments: Tournament[] = [];
 
-    constructor(private _heroService: HeroService, private _router: Router) { }
+    constructor(private _tournamentsService: TournamentsService, private _router: Router) { }
 
     ngOnInit() {
-        this._heroService.getHeroes().then(heroes => this.heroes = heroes.slice(1, 5));
+        this._tournamentsService.getTournaments().then(tournaments => this.tournaments = tournaments.slice(1, 5));
     }
 
-    gotoDetail(hero: Hero) {
-        this._router.navigate(['Hero', { id: hero.id }]);
+    gotoDetail(tournament: Tournament) {
+        this._router.navigate(['Tournament', { id: tournament.id }]);
     }
 }

@@ -1,6 +1,6 @@
-import { Hero } from './hero.service';
+import { Tournament } from '../tournaments/tournaments.service';
 
-export var HEROES: Hero[] = [
+export var TOURNAMENTS: Tournament[] = [
     { "id": 11, "name": "Mr. Nice" },
     { "id": 12, "name": "Narco" },
     { "id": 13, "name": "Bombasto" },

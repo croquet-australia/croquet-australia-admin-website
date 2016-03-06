@@ -1,0 +1,10 @@
+<div *ngIf="tournament">
+    <h2>{{tournament.name}} details!</h2>
+    <div>
+        <label>id: </label>{{tournament.id}}</div>
+    <div>
+        <label>name: </label>
+        <input [(ngModel)]="tournament.name" placeholder="name" />
+    </div>
+    <button [routerLink]="['Tournaments']">Tournaments</button>
+</div>

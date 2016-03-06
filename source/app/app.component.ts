@@ -3,26 +3,26 @@ import { Component } from 'angular2/core';
 import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from 'angular2/router';
 
 // Application components
-import { HeroesComponent } from './heroes/heroes.component';
-import { HeroComponent } from './heroes/hero.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { TournamentsComponent } from './tournaments/tournaments.component';
+import { TournamentComponent } from './tournaments/tournament.component';
 
-// Application service
-import { HeroService } from './heroes/hero.service';
+// Application services
+import { TournamentsService } from './tournaments/tournaments.service';
 
 @Component({
     selector: 'my-app',
     templateUrl: 'app/app.component.html',
     directives: [ROUTER_DIRECTIVES],
-    providers: [HeroService, ROUTER_PROVIDERS]
+    providers: [TournamentsService, ROUTER_PROVIDERS]
 })
 
 @RouteConfig([
     { path: '/dashboard', name: 'Dashboard', component: DashboardComponent, useAsDefault: true },
-    { path: '/heroes', name: 'Heroes', component: HeroesComponent },
-    { path: '/detail/:id', name: 'Hero', component: HeroComponent }
+    { path: '/tournaments', name: 'Tournaments', component: TournamentsComponent },
+    { path: '/tournaments/:id', name: 'Tournament', component: TournamentComponent }
 ])
 
 export class AppComponent {
-    public title = 'Tour of Heroes';
+    public title = 'Administration';
 }
