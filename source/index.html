@@ -1,12 +1,16 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <base href="/">
-
-    <title>Croquet Australia Administration</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-    <link rel="stylesheet" href="styles.css">
+    <base href="/">
+    <title>Croquet Australia Administration</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/site.css">
 
     <!-- 1. Load libraries -->
     <!-- IE required polyfills, in this exact order -->
@@ -36,9 +40,14 @@
             .then(null, console.error.bind(console));
     </script>
 
+    <!-- todo: does Angular 2 suggest these go to <head>...</head> -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script> 
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
 </head>
 
 <!-- 3. Display the application -->
+
 <body>
     <my-app>Loading...</my-app>
 </body>
