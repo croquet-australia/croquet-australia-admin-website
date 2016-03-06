@@ -4,7 +4,7 @@ import { Tournament, TournamentsService } from './tournaments.service';
 import { TournamentComponent } from './tournament.component';
 
 @Component({
-    selector: 'my-tournaments',
+    selector: 'ca-tournaments',
     templateUrl: 'app/tournaments/tournaments.component.html',
     directives: [TournamentComponent]
 })

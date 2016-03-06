@@ -3,7 +3,7 @@ import { RouteParams, ROUTER_DIRECTIVES } from 'angular2/router';
 import { Tournament, TournamentsService } from './tournaments.service';
 
 @Component({
-    selector: 'my-tournament',
+    selector: 'ca-tournament',
     templateUrl: 'app/tournaments/tournament.component.html',
     directives: [ROUTER_DIRECTIVES]
 })

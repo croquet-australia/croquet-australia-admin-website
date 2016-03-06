@@ -3,7 +3,7 @@ import { Router } from 'angular2/router';
 import { Tournament, TournamentsService } from '../tournaments/tournaments.service';
 
 @Component({
-    selector: 'my-dashboard',
+    selector: 'ca-dashboard',
     templateUrl: 'app/dashboard/dashboard.component.html',
     styleUrls: ['app/dashboard/dashboard.component.css']
 })

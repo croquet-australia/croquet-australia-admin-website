@@ -11,7 +11,7 @@ import { TournamentComponent } from './tournaments/tournament.component';
 import { TournamentsService } from './tournaments/tournaments.service';
 
 @Component({
-    selector: 'my-app',
+    selector: 'ca-app',
     templateUrl: 'app/app.component.html',
     directives: [ROUTER_DIRECTIVES],
     providers: [TournamentsService, ROUTER_PROVIDERS]
