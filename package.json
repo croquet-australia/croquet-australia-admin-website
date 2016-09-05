@@ -4,6 +4,7 @@
   "license": "MIT",
   "angular-cli": {},
   "scripts": {
+    "init": "npm uninstall --global typescript angular-cli && npm cache clean && npm install --global typescript@2.0.0 angular-cli@webpack --no-optional",
     "start": "ng serve",
     "lint": "tslint \"src/**/*.ts\"",
     "test": "ng test",
@@ -38,6 +39,6 @@
     "protractor": "4.0.3",
     "ts-node": "1.2.1",
     "tslint": "3.13.0",
-    "typescript": "^2.0.0"
+    "typescript": "2.0.0"
   }
 }
