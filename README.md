@@ -1,5 +1,7 @@
 # Croquet Australia - Admin Website
 
+[![Build Status](https://travis-ci.org/croquet-australia/croquet-australia-admin-website.svg?branch=master)](https://travis-ci.org/croquet-australia/croquet-australia-admin-website)
+
 ## Development
 
 Use the following commands to develop & test this project.
