@@ -1,6 +1,6 @@
 # Croquet Australia - Admin Website
 
-[![Build Status](https://travis-ci.org/croquet-australia/croquet-australia-admin-website.svg?branch=master)](https://travis-ci.org/croquet-australia/croquet-australia-admin-website)
+[![Build status](https://ci.appveyor.com/api/projects/status/957tmfmcl1ennvr0/branch/master?svg=true)](https://ci.appveyor.com/project/TimMurphy/croquet-australia-admin-website/branch/master)
 
 ## Want to help?
 

@@ -1,0 +1,19 @@
+# https://www.appveyor.com/blog/2014/06/04/shallow-clone-for-git-repositories/
+shallow_clone: true
+
+install:
+  - .\scripts\appveyor\install.cmd
+
+build_script:
+  - .\scripts\appveyor\build.cmd
+
+test_script:
+  - .\scripts\appveyor\test.cmd
+
+notifications:
+  - provider: Slack
+    incoming_webhook: 
+      secure: UTeDEvUM8lGmOLUwIt/BzYrxGGjPwVDxSo0kKhrHkBIuO5vOJgFBKOR10ggLGN1BhfcubNFlftrDUB8inzVeblH9oCDsZK7hqjXQmn/BszA=  
+    channel: croquet-australia
+    on_build_success: true
+    on_build_failure: true
