@@ -2,6 +2,11 @@
 
 [![Build Status](https://travis-ci.org/croquet-australia/croquet-australia-admin-website.svg?branch=master)](https://travis-ci.org/croquet-australia/croquet-australia-admin-website)
 
+## Want to help?
+
+Want to file a bug, contribute some code, or improve documentation? Excellent! Read up on our
+guidelines for [contributing][contributing].
+
 ## Development
 
 Use the following commands to develop & test this project.
