@@ -11,6 +11,9 @@ build_script:
 test_script:
   - .\scripts\appveyor\test.cmd
 
+artifacts:
+  - path: dist
+
 notifications:
   - provider: Slack
     incoming_webhook: 
