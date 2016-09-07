@@ -18,4 +18,7 @@ notifications:
     channel: croquet-australia
     on_build_success: true
     on_build_failure: true
-    template: Build <{{buildUrl}}|{{buildVersion}}>, *{{commitMessage}}* (<{{commitUrl}}|{{commitId}}>), of {{projectName}}@{{branch}} by {{commitAuthor}} {{status}}.
+    template: |
+      Build <{{buildUrl}}|{{buildVersion}}> *{{status}}*.
+      
+      _{{commitMessage}}_ (<{{commitUrl}}|{{commitId}}>) for {{projectName}}@{{branch}} by {{commitAuthor}}.
