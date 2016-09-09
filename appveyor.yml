@@ -3,13 +3,14 @@ version: "{build}"
 shallow_clone: true
 
 install:
-  - .\scripts\appveyor\install.cmd
+  - ps: Install-Product node stable
+  - cmd: npm run appveyor:install
 
 build_script:
-  - .\scripts\appveyor\build.cmd
+  - npm run appveyor:build
 
 test_script:
-  - .\scripts\appveyor\test.cmd
+  - npm run appveyor:build
 
 artifacts:
   - path: dist

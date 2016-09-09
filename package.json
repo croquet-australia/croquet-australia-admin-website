@@ -4,12 +4,17 @@
   "license": "MIT",
   "angular-cli": {},
   "scripts": {
+    "build": "ng build -prod",
     "init": "ts-node scripts/npm/init.ts",
     "start": "ng serve",
     "lint": "tslint \"src/**/*.ts\"",
     "test": "ng test --watch false && ng e2e",
     "pree2e": "webdriver-manager update",
-    "e2e": "protractor"
+    "e2e": "protractor",
+    "appveyor:install": "npm run init && npm install --no-optional",
+    "appveyor:build": "echo Build occurs after tests have successfully completed.",
+    "appveyor:test": "npm test",
+    "appveyor:after_test": "npm build"
   },
   "private": true,
   "dependencies": {
