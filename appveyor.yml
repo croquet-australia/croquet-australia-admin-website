@@ -16,7 +16,10 @@ build_script:
   - npm run appveyor:build
 
 test_script:
-  - npm run appveyor:build
+  - npm run appveyor:test
+
+after_test:
+  - npm run appveyor:after-test
 
 artifacts:
   - path: dist
