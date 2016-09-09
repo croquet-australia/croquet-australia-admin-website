@@ -2,6 +2,12 @@
 version: "{build}"
 shallow_clone: true
 
+# branches to build
+branches:
+  # branches are not built because master is only updated via pull requests and a pull request can only be merged when the test passes 
+  only:
+    - master
+
 install:
   - ps: Install-Product node stable
   - cmd: npm run appveyor:install
