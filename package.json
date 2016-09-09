@@ -4,7 +4,7 @@
   "license": "MIT",
   "angular-cli": {},
   "scripts": {
-    "init": "npm uninstall --global typescript angular-cli && npm cache clean && npm install --global typescript@2.0.0 angular-cli@webpack --no-optional",
+    "init": "ts-node scripts/npm/init.ts",
     "start": "ng serve",
     "lint": "tslint \"src/**/*.ts\"",
     "test": "ng test --watch false && ng e2e",
@@ -30,6 +30,7 @@
     "@types/jasmine": "^2.2.30",
     "angular-cli": "1.0.0-beta.11-webpack.8",
     "awesome-typescript-loader": "2.2.1",
+    "chalk": "^1.1.3",
     "codelyzer": "~0.0.26",
     "jasmine-core": "2.4.1",
     "jasmine-spec-reporter": "2.5.0",
