@@ -14,7 +14,7 @@
     "appveyor:install": "npm run init && npm install --no-optional",
     "appveyor:build": "echo Build occurs after tests have successfully completed.",
     "appveyor:test": "npm test",
-    "appveyor:after_test": "npm build"
+    "appveyor:after-test": "npm build"
   },
   "private": true,
   "dependencies": {
