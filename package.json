@@ -14,7 +14,8 @@
     "appveyor:install": "npm run init && npm install --no-optional",
     "appveyor:build": "echo Build occurs after tests have successfully completed.",
     "appveyor:test": "npm test",
-    "appveyor:after-test": "npm build"
+    "appveyor:after-test": "npm build",
+    "azure:create-website": "ts-node scripts/azure/create-website"
   },
   "private": true,
   "dependencies": {
@@ -35,6 +36,7 @@
     "@types/jasmine": "^2.2.30",
     "angular-cli": "1.0.0-beta.11-webpack.8",
     "awesome-typescript-loader": "2.2.1",
+    "azure-mgmt-website": "^0.9.16",
     "chalk": "^1.1.3",
     "codelyzer": "~0.0.26",
     "jasmine-core": "2.4.1",
