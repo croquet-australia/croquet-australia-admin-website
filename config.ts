@@ -28,8 +28,6 @@
  * todo: replace azure account commands with a script. 
  */
 
-/// <reference path="typings/index.d.ts" />
-
 const fs = require('fs');
 const os = require('os');
 const webSiteManagement = require('azure-mgmt-website');

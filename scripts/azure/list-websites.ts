@@ -7,8 +7,6 @@
  *  - http://azure.github.io/azure-sdk-for-node/azure-asm-website/latest/
  */
 
-/// <reference path='../../typings/index.d.ts' />
-
 import { config } from '../../config';
 import { Log } from '../lib/log';
 import { Shell } from '../lib/shell';
