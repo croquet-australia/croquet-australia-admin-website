@@ -1,5 +1,3 @@
-/// <reference path='../../typings/index.d.ts' />
-
 import * as shell from 'shelljs';
 import { Log } from './log';
 
