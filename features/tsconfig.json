@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "module": "umd",
+        "moduleResolution": "node",
+        "outDir": "./tmp",
+        "target": "es6"
+    }
+}
