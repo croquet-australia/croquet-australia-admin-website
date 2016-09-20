@@ -5,7 +5,7 @@
   "angular-cli": {},
   "scripts": {
     "build": "ng build -prod",
-    "init": "npm install --global --no-optional ts-node typescript@2 && npm install --no-optional chalk shelljs typings && typings install && ts-node scripts/npm/init.ts",
+    "init": "npm install --global --no-optional ts-node typescript@2 && npm install --no-optional chalk shelljs && ts-node scripts/npm/init.ts",
     "start": "ng serve",
     "lint": "tslint \"src/**/*.ts\"",
     "test": "ng test --watch false && ng e2e",
