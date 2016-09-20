@@ -32,7 +32,10 @@
     "zone.js": "^0.6.23"
   },
   "devDependencies": {
+    "@types/chalk": "^0.4.29",
     "@types/jasmine": "^2.2.30",
+    "@types/node": "^6.0.39",
+    "@types/shelljs": "^0.3.31",
     "angular-cli": "^1.0.0-beta.15",
     "azure-mgmt-website": "^0.9.16",
     "chalk": "^1.1.3",
