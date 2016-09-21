@@ -1,4 +1,7 @@
-import { binding, given, then } from "cucumber-tsflow";
+import { binding, given, then } from 'cucumber-tsflow';
+import * as chai from 'chai';
+
+const should = chai.should();
 
 @binding()
 class ArithmeticSteps {
@@ -16,9 +19,7 @@ class ArithmeticSteps {
 
     @then(/I receive the result '(\d*)'/)
     public thenResultReceived(expectedResult: string): void {
-        if (parseInt(expectedResult) !== this.computedResult) {
-            throw new Error("Arithmetic Error");
-        }
+        parseInt(expectedResult).should.equal(this.computedResult);
     }
 }
 
