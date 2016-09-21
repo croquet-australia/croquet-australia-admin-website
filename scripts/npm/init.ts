@@ -10,6 +10,7 @@ uninstallGlobalNpmPackage('typescript');
 uninstallGlobalNpmPackage('angular-cli');
 installGlobalNpmPackage('typescript@2');
 installGlobalNpmPackage('angular-cli@latest');
+installGlobalNpmPackage('rimraf');
 
 function uninstallGlobalNpmPackage(packageName: string): void {
     shell.exec(
